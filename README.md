@@ -1,12 +1,14 @@
-# AngularFast14
+# `FASTTreeItem` in Angular 15
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.
+
 # About
 
 This is a reproduction of an issue involving use of the `ChildrenDirective` in FASTTreeItem and FASTTreeView leading to failure to render nested tree items in Angular.
+[#6740](https://github.com/microsoft/fast/issues/6740)
+
 
 Console errors:
-
 ```
 Uncaught TypeError: Cannot read properties of undefined (reading 'fast-fmoaic-304-c')
     at ChildrenDirective.getSource (node-observation.js:[60:22](https://github.com/microsoft/fast/blob/master/packages/web-components/fast-element/src/templating/node-observation.ts#L81))
