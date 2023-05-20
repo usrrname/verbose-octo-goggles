@@ -3,21 +3,34 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.
 # About
 
-This is a reproduction of an issue involving use of the `Children` directive in FASTTreeItem and FASTTreeView leading to lack of rendering in Angular.
+This is a reproduction of an issue involving use of the `ChildrenDirective` in FASTTreeItem and FASTTreeView leading to failure to render nested tree items in Angular.
 
 Console errors:
 
 ```
 Uncaught TypeError: Cannot read properties of undefined (reading 'fast-fmoaic-304-c')
-    at ChildrenDirective.getSource (node-observation.js:60:22)
-    at ChildrenDirective.handleEvent (children.js:18:36)
+    at ChildrenDirective.getSource (node-observation.js:[60:22](https://github.com/microsoft/fast/blob/master/packages/web-components/fast-element/src/templating/node-observation.ts#L81))
+    at ChildrenDirective.handleEvent (children.js:[18:36](https://github.com/microsoft/fast/blob/master/packages/web-components/fast-element/src/templating/children.ts#L100))
     at _ZoneDelegate.invoke (zone.js:372:26)
     at Zone.runGuarded (zone.js:144:47)
     at MutationObserver.<anonymous> (zone.js:128:29)
 ```
 
 This reproduction uses Angular 15 and the following FAST packages:
+```
+"@microsoft/fast-element": "2.0.0-beta.23",
+"@microsoft/fast-foundation": "3.0.0-alpha.27",
+"@microsoft/fast-web-utilities": "6.0.0",
+```
 
+![console error with Children Directive](./src/assets/children-error.png)
+
+![code execution fails to continue at node-observation.js](src/assets/node-observation-error.png)
+
+![](src/assets/children-directive-err.png)
+
+![screenshot of erroneous behavior](src/assets/treeitem-error.png)
+![screenshot of erroneous behavior](src/assets/treeview.png)
 
 
 ## Development server

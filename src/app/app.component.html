@@ -1,16 +1,21 @@
 <div class="App">
+  <p>Tree View</p>
   <fast-tree-view id="tree1">
-    <fast-tree-item>
+    <fast-tree-item id="tree-item-1">
       Tree item 1
-      <fast-tree-item slot="item">Tree item 1 - 1</fast-tree-item>
-      <fast-tree-item slot="item">Tree item 1 - 2</fast-tree-item>
+      <fast-tree-item id="tree-item-1-1" slot="item">Tree item 1 - 1</fast-tree-item>
+      <fast-tree-item id="tree-item-1-2"  slot="item">Tree item 1 - 2</fast-tree-item>
     </fast-tree-item>
     <fast-tree-item>Tree item 2</fast-tree-item>
   </fast-tree-view>
 
-  <fast-tree-item id="tree-item1">
+<hr/>
+
+<p>Tree Item with 2 nested items </p>
+  <fast-tree-item id="tree-item-alone">
     Tree item 1
     <fast-tree-item slot="item">Branch 1</fast-tree-item>
     <fast-tree-item slot="item">Branch 2</fast-tree-item>
   </fast-tree-item>
+
 </div>
