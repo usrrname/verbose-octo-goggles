@@ -1,6 +1,24 @@
 # AngularFast14
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.
+# About
+
+This is a reproduction of an issue involving use of the `Children` directive in FASTTreeItem and FASTTreeView leading to lack of rendering in Angular.
+
+Console errors:
+
+```
+Uncaught TypeError: Cannot read properties of undefined (reading 'fast-fmoaic-304-c')
+    at ChildrenDirective.getSource (node-observation.js:60:22)
+    at ChildrenDirective.handleEvent (children.js:18:36)
+    at _ZoneDelegate.invoke (zone.js:372:26)
+    at Zone.runGuarded (zone.js:144:47)
+    at MutationObserver.<anonymous> (zone.js:128:29)
+```
+
+This reproduction uses Angular 15 and the following FAST packages:
+
+
 
 ## Development server
 
