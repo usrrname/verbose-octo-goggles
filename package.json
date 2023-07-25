@@ -1,5 +1,5 @@
 {
-  "name": "angular-fast-14",
+  "name": "angular-fast-15",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,9 +10,10 @@
   },
   "private": true,
   "dependencies": {
-		"@microsoft/fast-element": "2.0.0-beta.23",
-		"@microsoft/fast-foundation": "3.0.0-alpha.27",
-		"@microsoft/fast-web-utilities": "6.0.0",
+    "@microsoft/fast-element": "2.0.0-beta.24",
+    "@microsoft/fast-foundation": "3.0.0-alpha.28",
+    "@microsoft/fast-react-wrapper": "1.0.0-alpha.25",
+    "@microsoft/fast-web-utilities": "6.0.0",
     "@angular/animations": "^15.2.0",
     "@angular/common": "^15.2.0",
     "@angular/compiler": "^15.2.0",

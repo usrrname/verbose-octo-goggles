@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # About
 
 This is a reproduction of an issue involving use of the `ChildrenDirective` in FASTTreeItem and FASTTreeView leading to failure to render nested tree items in Angular.
-[#6740](https://github.com/microsoft/fast/issues/6740)
+This was previously mentioned in [#6740](https://github.com/microsoft/fast/issues/6740) for Angular 14, and currently impacts Angular 15 and 16.
 
 
 Console errors:
@@ -20,9 +20,9 @@ Uncaught TypeError: Cannot read properties of undefined (reading 'fast-fmoaic-30
 
 This reproduction uses Angular 15 and the following FAST packages:
 ```
-"@microsoft/fast-element": "2.0.0-beta.23",
-"@microsoft/fast-foundation": "3.0.0-alpha.27",
-"@microsoft/fast-web-utilities": "6.0.0",
+  "@microsoft/fast-element": "2.0.0-beta.24",
+  "@microsoft/fast-foundation": "3.0.0-alpha.28",
+  "@microsoft/fast-react-wrapper": "1.0.0-alpha.25",
 ```
 
 ![console error with Children Directive](./src/assets/children-error.png)
